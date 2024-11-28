@@ -24,7 +24,7 @@ const WeatherCard = ({ weatherData }) => {
           alt={weather[0].description}
         />
         <div>
-          <h3>{main.temp}°C</h3>
+          <h3>{Math.round(main.temp)}°C</h3>
           <p>{weather[0].description}</p>
         </div>
       </div>
